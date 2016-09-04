@@ -1,0 +1,25 @@
+---
+- company: Daft Labs
+  city: Burlington, VT
+  title: Junior Partner
+  startdate: 2015-03-15
+  enddate: 2016-08-31
+  description: Oversaw growth from five to 18 employees at a startup software development agency. Acted as co-director of operations and lead project manager for the entire team
+- company: QC Creative
+  city: Burlington, VT
+  title: Owner
+  startdate: 2010-01-01
+  enddate: 2015-04-01
+  description: Founded a digital marketing agency providing web services for small-medium businesses and nonprofits
+- company: University of Vermont
+  city: Burlington, VT
+  title: Web Developer & Accessibility Consultant
+  startdate: 2010-06-01
+  enddate: 2014-05-30
+  description:
+- company: Self
+  city: Burlington, VT
+  title: Freelance Webdeveloper
+  startdate: 2007-01-01
+  enddate: 2010-01-01
+  description:

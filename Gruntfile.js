@@ -19,6 +19,7 @@ module.exports = function(grunt) {
 
   require('time-grunt')(grunt);
   require('load-grunt-tasks')(grunt);
+  require('grunt-contrib-less')(grunt);
 
   // Project configuration.
   grunt.initConfig({
@@ -30,8 +31,8 @@ module.exports = function(grunt) {
 
     watch: {
       assemble: {
-        files: ['<%= config.src %>/{content,data,templates}/{,*/}*.{md,hbs,yml}'],
-        tasks: ['assemble']
+        files: ['<%= config.src %>/{content,data,templates,less}/{,*/}*.{less,md,hbs,yml}'],
+        tasks: ['assemble','less']
       },
       livereload: {
         options: {
@@ -72,10 +73,24 @@ module.exports = function(grunt) {
           data: '<%= config.src %>/data/*.{json,yml}',
           partials: '<%= config.src %>/templates/partials/*.hbs',
           plugins: ['assemble-contrib-permalinks','assemble-contrib-sitemap'],
+          helpers: ['helper-moment'],
         },
         files: {
           '<%= config.dist %>/': ['<%= config.src %>/templates/pages/*.hbs']
         }
+      }
+    },
+
+    less: {
+      options: {
+        paths: ['assets/css']
+      },
+      files: {
+        expand: true,
+        cwd: 'src/less',
+        src: ['*.less'],
+        dest: 'dist/assets/css/',
+        ext: '.css'
       }
     },
 
@@ -90,7 +105,7 @@ module.exports = function(grunt) {
         expand: true,
         cwd: 'src/assets/',
         src: '**',
-        dest: '<%= config.dist %>/assets/css/'
+        dest: '<%= config.dist %>/assets/'
       }
     },
 
@@ -111,7 +126,8 @@ module.exports = function(grunt) {
   grunt.registerTask('build', [
     'clean',
     'copy',
-    'assemble'
+    'assemble',
+    'less'
   ]);
 
   grunt.registerTask('default', [

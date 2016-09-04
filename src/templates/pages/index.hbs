@@ -1,10 +1,88 @@
 ---
 title: Home
-heading: 'Yo, Assemble!'
-lead: Welcome to my blog!
 ---
-<div class="jumbotron">
-  <h1>{{ heading }}</h1>
-  <p>This is a Assemble Generator template using <a href="http://getbootstrap.com">Bootstrap</a>. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-  <p><a href="blog.html" class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
+<div class="b-masthead jumbotron hidden-print">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 col-lg-2">
+        <img src="assets/css/headshot-joshlee.jpg"
+             class="thumb"
+             id="headshot"
+             alt="Headshot of Josh Lee"
+             width="200">
+      </div>
+      <div class="col-xs-12 col-sm-8 col-lg-10">
+        <h1>
+            Joshua M. Lee
+        </h1>
+        <p>
+            <em>Advocate for empowerment through accessible technology, open source software, and sustainable business practices.</em>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="b-contact">
+    <div class="b-contact-info vcard">
+      <p class="fn">
+        <a class="url"
+           href="#">Joshua M. Lee</a>
+      </p>
+      <p class="adr">
+        <span class="street-address">50 North St. Apt. D</span> <span class="region">Burlington, VT</span> <span class="postal-code">05401</span> <span class="country-name">USA</span>
+      </p>
+      <p class="tel">
+        <a href="tel:+18027352274">(802) 735.2274</a>
+      </p>
+      <p class="email">
+        <a href="mailto:josh@joshuamlee.com">josh@joshuamlee.com</a>
+      </p>
+    </div>
+    <ul class="b-contact-profiles">
+
+    </ul>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-9">
+      <div class="jobs">
+        <h1 class="section-head">Work Experience</h1>
+          {{#each jobs}}
+          <div class="job">
+            <h2>
+              <span class="company">{{this.company}}</span>
+               — <span class="title">{{this.title}}</span>
+            </h2>
+            <span class="date">{{ formatDate this.startdate "%B %Y" }} - {{ formatDate this.enddate "%B %Y" }}</span>
+            <p>{{this.description}}</p>
+          </div>
+          {{/each }}
+
+          <h1 class="section-head">Volunteering</h1>
+          {{#each volunteering}}
+          <div class="job">
+            <h2>
+              <span class="company">{{this.company}}</span>
+               — <span class="title">{{this.title}}</span>
+            </h2>
+            <span class="date">{{ this.startdate }} - {{ this.enddate }}</span>
+            <p>{{this.description}}</p>
+          </div>
+          {{/each }}
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-3 sidebar">
+      <h1 class="section-head">Skills</h1>
+      <div class="skills">
+        {{#each skills}}
+        <div class="skill">{{this.title}}
+          <ul class="skillslist">
+            {{#each this.skills}}
+            <li>{{this}}</li>
+            {{/each }}
+          </ul>
+        </div>
+        {{/each }}
+    </div>
+  </div>
 </div>
