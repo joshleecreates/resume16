@@ -1,0 +1,17 @@
+{
+  "generator-assemble": {
+    "projectName": "resume16",
+    "projectDesc": "Resume for Josh Lee 2016",
+    "authorLogin": "joshleecreates",
+    "installPlugin": true,
+    "author": {
+      "name": "Josh Lee",
+      "login": "assemble",
+      "email": "josh@daftlabs.com"
+    },
+    "plugins": [
+      "assemble-contrib-permalinks",
+      "assemble-contrib-sitemap"
+    ]
+  }
+}
