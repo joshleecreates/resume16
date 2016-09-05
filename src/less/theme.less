@@ -153,19 +153,29 @@ blockquote strong {
   }
 }
 
-.skill ul {
-	.semantic-list();
-  margin-bottom: 1em;
+.skill {
+  h2 {
+    font-size:1em;
+    font-weight: bold;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    margin-bottom: 0;
+  }
 
-	li {
-		font-size:.9em;
-		display: inline-block;
-    opacity: 0.8;
+  ul {
+  	.semantic-list();
+    margin-bottom: 1em;
 
-    &:hover {
-      opacity: 1;
-    }
-	}
+  	li {
+  		font-size:.9em;
+  		display: inline-block;
+      opacity: 0.8;
+      margin-right: 5px;
+
+      &:hover {
+        opacity: 1;
+      }
+  	}
+  }
 }
 
 .e-special-amp {
