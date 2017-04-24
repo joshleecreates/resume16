@@ -1,25 +1,31 @@
 ---
+- company: Localvore
+  city: Burlington, VT
+  title: Senior Developer
+  startdate: 2016-10-01
+  enddate: 2017-04-17
+  description: Developed APIs and microservices using an Elixir stack. Specialized in 3rd party API integrations.
 - company: Daft Labs
   city: Burlington, VT
   title: Junior Partner
   startdate: 2015-03-15
   enddate: 2016-08-31
-  description: Oversaw growth from five to 18 employees at a startup software development agency. Acted as co-director of operations and lead project manager for the entire team
+  description: Managed an agile software development team with a specialty in building technology start-ups.
 - company: QC Creative
   city: Burlington, VT
-  title: Owner
-  startdate: 2010-01-01
+  title: Owner & Lead Developer
+  startdate: 2010-10-01
   enddate: 2015-04-01
-  description: Founded a digital marketing agency providing web services for businesses and nonprofits
+  description: Led a team of contractors and employees specialized in developing content marketing platforms for businesses, non-profits, and educational institutions.
 - company: University of Vermont
   city: Burlington, VT
   title: Web Developer & Accessibility Consultant
   startdate: 2010-06-01
   enddate: 2014-05-30
-  description:
+  description: Created Section 508 and WCAG compatible content management solutions. Consulted with and trained department leaders in accessibility and web management.
 - company: Self
   city: Burlington, VT
-  title: Freelance Webdeveloper
+  title: Freelance Web Developer
   startdate: 2007-01-01
-  enddate: 2010-01-01
-  description:
+  enddate: 2010-10-01
+  description: Developed custom web solutions using a PHP/MySQL stack.

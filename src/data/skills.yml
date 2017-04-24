@@ -1,29 +1,22 @@
 ---
 - title: Web Development
   skills:
-  - WordPress
-  - Drupal
-  - PHP
-  - SQL
-  - HTML
-  - CSS
-  - ES6 (JavaScript)
-- title: Management
-  skills:
-    - Agile / Scrum practices
-    - strategic team development & management
-    - staff coaching
-- title: Marketing & Sales
-  skills:
-    - digital marketing
-    - startup financing
-    - proposal & grant writing
+  - Elixir (OTP)
+  - RESTful & Resourceful APIs
+  - PHP (Symfony, Laravel, WordPress)
+  - SQL (MySQL, Postgres)
+  - HTML/CSS/JS
 - title: Dev Ops
   skills:
-    - Linux
+    - Linux (Ubuntu)
     - AWS
     - Heroku
     - Docker
+- title: Specialites & Interests
+  skills:
+    - Linguistics & NLP
+    - Machine Learning
+    - Data Architecture & Big Data
 - title: Languages
   skills:
     - English (Native)
